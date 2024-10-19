@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'plain light';
+    src: url(./Fonts/plain-light-webfont.ttf);
+}
+
+@font-face {
+    font-family: 'plain regular' ;
+    src: url(./Fonts/plain-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: 'silkserif light' ;
+    src: url(./Fonts/silkserif-lightitalic-webfont.ttf);
+}
+
+@font-face {
+    font-family: 'silkserif regular' ;
+    src: url(./Fonts/silkserif-regularitalic-webfont.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* cursor */
+#crsr{
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    border: 2px solid rgb(198, 196, 196) ;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
+
+/* Loader parts */
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #0b0b0b;
+    z-index: 999;
+    padding: 25vh 10vw;
+}
+.line{
+    
+    width: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4vw;
+}
+.line h1{
+    font-size: 6.1vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: gilroy;
+    letter-spacing: 0.3vw;
+
+}
+
+.line h2{
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-right:2.5vw;
+
+}
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#line1-part1 h5, #line1-part1 h6{
+    font-size: 3vw;
+    font-family: silkserif light;
+    font-weight: 100;
+}
+#line1-part1 h5{
+    width: 5vw;
+    text-align: right;
+}
+ @keyframes anime {
+    0%{
+        font-family: plain light;
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: #ffff;
+        opacity: 1;
+    }
+    48%{
+        font-family: plain light;
+        -webkit-text-stroke: 1px #fff;
+        color: #ffff;
+        font-weight: 500;
+        opacity: 0;
+
+    }
+
+    50%{
+        font-family: silkserif light;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+
+    }
+    100%{
+        font-family: silkserif light;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 0;
+
+    }
+ }
+
+
+
+#main{
+    position: relative;
+    background-color: #1111;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+
+/* Nav part */
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 7vw;
+}
+
+#nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+#nav-part2 h4{
+    font-size: 1vw;
+    font-family: plain light;
+    font-weight: 200;
+}
+
+
+/* Hero part */
+
+.hero{
+   width: 71%;
+   margin-left: 29%;
+   height: fit-content;
+   /* overflow: hidden; */
+   display: flex;
+   align-items: center;
+   position: relative;
+   z-index: 9999;
+}
+.hero:nth-child(2){
+    margin-top: 13vh;
+}
+
+.hero h1{
+    font-size: 7.4vw;
+    text-transform: uppercase;
+    line-height: 7.4vw;
+    font-family: plain light;
+    letter-spacing: 0.3vw;
+}
+
+
+.hero h2 {
+    font-size: 7.4vw;
+    text-transform: uppercase;
+    line-height: 7.4vw;
+    font-family: plain light;
+    letter-spacing: 0.3vw;
+    border-bottom: 0.5vw solid #fff;
+    padding-bottom: 0.8vw;
+    transition: all ease 0.3s;
+
+
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 1px  #fff;
+    color: transparent;
+    font-weight: 500;
+    border-bottom:  0.5vw solid #ffffff00;
+}
+
+
